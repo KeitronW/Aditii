@@ -1,0 +1,348 @@
+* {box-sizing: border-box;}
+
+
+/* SAVED FOR FUTURE USE
+
+color for background: #3dc4b6;
+color for top-nav-list: #4bd0bf;
+color  for colophon: #2ea89b;
+default color: #ffff;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pattaya', sans-serif;
+
+
+
+<svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg>
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+
+*/
+
+:root {
+    --prim: #3dc4b6; /*background*/
+    --sec: #4cafa2; /*top-nav-list background*/
+    --tert: #21968a; /*colophon background*/
+    --quart: #ffff; /*default color*/
+    --tit: 'Pattaya', sans-serif; /*aditii name*/
+    --sub-head: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+button:hover {
+    background-color: pink;
+    transition: 1.5s ease;
+}
+
+/* HEADER */
+.header .inner {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    position: relative;
+}
+.logo {
+    /* border: 1px solid blue; */
+    width: 200px;
+    margin-left: 150px;
+    font-size: 40px;
+    font-family: var(--tit);
+    text-transform: capitalize;
+    color: var(--prim);
+}
+#search-bar {
+    width: 600px;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+.search-bar-image {
+    position: absolute;
+    top: 33px;
+    left: 960px;
+}
+.cart-image {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+.top-nav {
+    /* border: 1px solid blue; */
+    background-color: var(--tert);
+    padding: 0;
+    height: 50px;
+}
+.top-nav-item {
+    position: relative;
+    left: 150px;
+    display: inline-block;
+    border-right: 1px solid black;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+.top-nav-item:last-child {
+    border-right: none;
+}
+/* CLOSE HEADER */
+
+/* MAIN */
+
+.display-section {
+    /* border: 1px solid red; */
+    background-color: var(--sec);
+}
+
+.main-content {
+    margin-left: 300px;
+    /* border: 1px solid green; */
+    width: 650px;
+    position: relative;
+    top: 50px;
+    height: 400px;
+}
+.inner .main-content .sub-header {
+    /* border: 1px solid orange; */
+    font-size: 50px;
+    font-family: var(--sub-head);
+    text-transform: uppercase;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 350px;
+    color: white;
+    /* margin-left: 300px; */
+}
+
+
+.main-content .text {
+    /* border: 1px solid blue; */
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    color: white;
+    /* margin-top: -100px; */
+}
+#sub-header-button {
+    font-size: 20px;
+    font-family: var(--sub-head);
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    border-color: white;
+    background-color: var(--sec);
+    margin-left: 350px;
+}
+
+.sliders {
+    /* border: 1px solid blue; */
+    width: 300px;
+    position: relative;
+    height: 60px;
+    top: 10px;
+    left: 600px;
+}
+.slider {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#slider1 {
+    left: 50px;
+}
+#slider2 {
+    left: 75px;
+}
+#slider3 {
+    left: 100px;
+}
+#slider4 {
+    left: 125px;
+}
+#slider5 {
+    left: 150px;
+}
+
+.sub-main-content {
+    background-color: white;
+    position:relative;
+    height: 300px;
+}
+.content-product {
+    /* border: 1px solid yellow; */
+    width: 350px;
+    position: absolute;
+}
+.product3 {
+    top: 50px;
+    left: 1000px;
+}
+.product2 {
+    top: 50px;
+    left: 625px;
+}
+.product1 {
+    top: 50px;
+    left: 250px;
+}
+
+
+/* is this going to work a second time? Use this for product-display */
+.content-img {
+    position: relative;
+}
+.product1 .sub-header, .product2 .sub-header, .product3 .sub-header {
+    /* border: 1px solid green; */
+    width: 150px;
+    margin-left: 200px;
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    font-family: var(--sub-head);
+    text-transform: uppercase;
+    color: grey;
+}
+.shop {
+    font-size: 20px;
+    font-family: var(--sub-head);
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    border-color: white;
+    background-color: var(--sec);
+}
+.featured-product {
+    font-size: 40px;
+    font-family: var(--sub-head);
+    background-color: var(--prim);
+    padding-left: 150px;
+    color: var(--quart);
+    text-transform: uppercase;
+}
+.product-display-section {
+    /* border: 1px solid green; */
+    position: relative;
+    height: 800px;
+}
+.product-display {
+    /* border: 1px solid red; */
+    border-style: outset;
+    border-bottom: 4px solid var(--prim);
+    width: 225px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+}
+
+.product4 .sub-header, .product5 .sub-header, .product6 .sub-header, .product7 .sub-header, .product8 .sub-header, .product9 .sub-header {
+    font-size: 25px;
+    font-family: var(--sub-head);
+    text-transform: uppercase;
+    color: grey;
+}
+
+
+.product9 {
+    bottom: 50px;
+    left: 1000px;
+}
+.product8 {
+    bottom: 50px;
+    left: 600px;
+}
+.product7 {
+    bottom: 50px;
+    left: 200px;
+}
+.product6 {
+    top: 100px;
+    left: 1000px;
+}
+.product5 {
+    top: 100px;
+    left: 600px;
+}
+.product4 {
+    top: 100px;
+    left: 200px;
+}
+.price-amount {
+    /* border: 1px solid blue; */
+    width: fit-content;
+    position: relative;
+    font-size: 25px;
+    font-family: var(--sub-head);
+    color: grey;
+}
+.product-display .button {
+    /* border: 2px dotted brown; */
+    position: absolute;
+    bottom: 30px;
+    left: 85px;
+}
+/* CLOSE MAIN */
+
+/* FOOTER */
+
+.footer .inner {
+    background-color: var(--prim);
+}
+.footer-nav {
+    /* border: 1px solid green; */
+    height: 400px;
+    position: relative;
+}
+.footer-nav-list {
+    /* border: 1px solid red; */
+    line-height: 1.5;
+    list-style-type: none;
+    width: 200px;
+    color: var(--quart);
+    font-family: var(--sub-head);
+    font-size: 15px;
+    position: absolute;
+    text-transform: uppercase;
+}
+#storelink4 {
+    top: 50px;
+    left: 1050px;
+}
+#storelink3 {
+    top: 50px;
+    left: 775px;
+}
+#storelink2 {
+    top: 50px;
+    left: 475px;
+}
+#storelink1 {
+    top: 50px;
+    left: 200px;
+}
+
+.colophon {
+    background-color: var(--tert);
+    height: 30px;
+}
+.colophon-text {
+    position: relative;
+    left: 600px;
+    color: white;
+}
+/* CLOSE FOOTER */
+
